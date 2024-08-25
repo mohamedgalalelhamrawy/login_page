@@ -1,5 +1,6 @@
  import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:login_page/contants.dart';
 
 class CustomTextField extends StatelessWidget {
   CustomTextField({ super.key, required this.text,required this.icon ,this.suffixicon });
@@ -15,20 +16,20 @@ class CustomTextField extends StatelessWidget {
                 prefixIcon: icon ,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
-                  borderSide: BorderSide(
-                    color: Color.fromARGB(255, 156, 59, 52)
+                  borderSide: const BorderSide(
+                    color: kbordercolor
                   )
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
-                  borderSide: BorderSide(
-                    color:  Color.fromARGB(255, 156, 59, 52)
+                  borderSide:const BorderSide(
+                    color:  kbordercolor
                   )
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
-                  borderSide: BorderSide(
-                    color: Color.fromARGB(255, 156, 59, 52)
+                  borderSide: const BorderSide(
+                    color:kbordercolor
                   )
                 )
               ),
